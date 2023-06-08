@@ -9,10 +9,10 @@
 	_global	<BOOL>
 	
 	Example:
-	[ player, "", true ] call delta_green_fnc_playSound;
+	[ player, "" ] call enclave_fnc_playSound;
 */
 
-params ["_object", "_sound", "_global"];
+params ["_object", "_sound", ["_global", true]];
 
 if (is3DEN) exitWith {};
 
