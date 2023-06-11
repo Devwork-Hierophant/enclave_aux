@@ -1,5 +1,19 @@
 // params [""];
 
+/*
+    Author:
+    Silence
+
+    Description:
+    Updates the available skill points
+
+    Params:
+    N/A
+
+    Usage:
+    call enclave_fnc_character_skill_parseLevel;
+*/
+
 #include "..\..\commonDefs.hpp"
 
 private _skillPoints = localNamespace getVariable ["enclave_sheet_skillPoints", SKILL_POINTS];

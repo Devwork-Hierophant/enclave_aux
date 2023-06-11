@@ -1,3 +1,17 @@
+/*
+    Author:
+    Silence
+
+    Description:
+    Sets up the main character creation screen
+
+    Params:
+    _unit   <UNIT>
+
+    Usage:
+    [_unit] call enclave_fnc_character_creation;
+*/
+
 params ["_unit"];
 
 // private _test = (_ctrls select 9);

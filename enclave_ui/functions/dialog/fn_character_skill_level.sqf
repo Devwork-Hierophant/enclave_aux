@@ -1,3 +1,19 @@
+/*
+    Author:
+    Silence
+
+    Description:
+    Allows a skill level to be added/removed, also removes/adds available skill points
+
+    Params:
+    _skill       <STRING>
+    _operation   <STRING|+/-|>
+    _levels      <INTEGER>
+
+    Usage:
+    [_skill, _operation, _levels] call enclave_fnc_character_skill_level;
+*/
+
 params ["_skill", "_operation", "_levels"];
 
 // ["charisma", "-", 1] call enclave_fnc_character_skill_level;

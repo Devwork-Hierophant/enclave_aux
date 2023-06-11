@@ -1,3 +1,18 @@
+/*
+    Author:
+    Silence
+
+    Description:
+    Runs the code that is associated with the "Reset" button on UI's. Basically resets data.
+
+    Params:
+    _unit   <UNIT>
+    _dialog   <STRING>
+
+    Usage:
+    [_unit, _dialog] spawn enclave_fnc_buttonReset;
+*/
+
 params ["_unit", "_dialog"];
 
 // Spawn script

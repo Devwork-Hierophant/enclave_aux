@@ -1,3 +1,18 @@
+/*
+    Author:
+    Silence
+
+    Description:
+    Opens provided dialog, and prevents it from being closed by esc key
+
+    Params:
+    _dialog   <STRING>
+    _unit   <UNIT>
+
+    Usage:
+    [_dialog, _unit] call enclave_fnc_openDialog;
+*/
+
 params ["_dialog", "_unit"];
 #include "\a3\ui_f\hpp\definedikcodes.inc"
 

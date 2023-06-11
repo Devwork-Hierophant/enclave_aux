@@ -1,3 +1,17 @@
+/*
+    Author:
+    Silence
+
+    Description:
+    Parses an integer into a structured text
+
+    Params:
+    _level  <INTEGER>
+
+    Usage:
+    [_level] call enclave_fnc_character_skill_parseLevel;
+*/
+
 params ["_level"];
 
 private _textLevel = parseText format
