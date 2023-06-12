@@ -24,4 +24,4 @@ private _background = ctrlText 1403;
 
 hint str [_name, _age, _faction, _background];
 
-[_unit, _dialog] spawn enclave_fnc_buttonReset;
+[_unit, _dialog] spawn enclave_fnc_changeDialog;

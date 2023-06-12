@@ -188,7 +188,7 @@ class enclave_ui_character_creation_accept: RscButtonEnclave
 class enclave_ui_character_creation_pipboy: RscPictureEnclave
 {
 	idc = 1206;
-	text = "enclave_ui\images\pipboy_1.paa";
+	text = "enclave_ui\images\pipboy_neutral_ca.paa";
 	x = 0.567031 * safezoneW + safezoneX;
 	y = 0.368 * safezoneH + safezoneY;
 	w = 0.154687 * safezoneW;
@@ -387,7 +387,7 @@ $[
 	[-1205,"enclave_ui_character_creation_frame_5",[1,"#(argb,8,8,3)color(1,1,1,1)",["0.695937 * safezoneW + safezoneX","0.225 * safezoneH + safezoneY","0.04125 * safezoneW","0.0055 * safezoneH"],[-1,1,0,1],[-1,1,0,1],[-1,1,0,1],"","-1"],[]],
 	[1600,"enclave_ui_character_creation_reset",[1,"Reset",["0.262812 * safezoneW + safezoneX","0.786 * safezoneH + safezoneY","0.04125 * safezoneW","0.033 * safezoneH"],[0,1,0,1],[0,1,0,1],[-1,-1,-1,-1],"","-1"],["onButtonClick = |[player, ||enclave_character_skills||] spawn enclave_fnc_buttonReset|;"]],
 	[1601,"enclave_ui_character_creation_accept",[1,"Accept",["0.695937 * safezoneW + safezoneX","0.786 * safezoneH + safezoneY","0.04125 * safezoneW","0.033 * safezoneH"],[0,1,0,1],[0,1,0,1],[-1,-1,-1,-1],"","-1"],["onButtonClick = |[] call enclave_fnc_buttonAccept|;"]],
-	[-1206,"enclave_ui_character_creation_pipboy",[1,"enclave_ui\images\pipboy_1.paa",["0.567031 * safezoneW + safezoneX","0.368 * safezoneH + safezoneY","0.154687 * safezoneW","0.264 * safezoneH"],[-1,-1,-1,-1],[-1,-1,-1,-1],[-1,-1,-1,-1],"","-1"],[]],
+	[-1206,"enclave_ui_character_creation_pipboy",[1,"enclave_ui\images\pipboy_neutral_ca.paa",["0.567031 * safezoneW + safezoneX","0.368 * safezoneH + safezoneY","0.154687 * safezoneW","0.264 * safezoneH"],[-1,-1,-1,-1],[-1,-1,-1,-1],[-1,-1,-1,-1],"","-1"],[]],
 	[-1105,"enclave_ui_character_creation_description",[1,"",["0.54125 * safezoneW + safezoneX","0.533 * safezoneH + safezoneY","0.154687 * safezoneW","0.209 * safezoneH"],[0,0,0,1],[0,0,0,0],[0,0,0,0],"","-1"],[]],
 	[1602,"enclave_ui_character_creation_charisma_button_left",[1,"<",["0.453594 * safezoneW + safezoneX","0.544 * safezoneH + safezoneY","0.0103125 * safezoneW","0.044 * safezoneH"],[0,1,0,1],[-1,-1,-1,0],[-1,-1,-1,-1],"","2"],["onButtonClick = |[||charisma||, ||-||, 1] call enclave_fnc_character_skill_level|;"]],
 	[1603,"enclave_ui_character_creation_charisma_button_right",[1,">",["0.484531 * safezoneW + safezoneX","0.544 * safezoneH + safezoneY","0.0103125 * safezoneW","0.044 * safezoneH"],[0,1,0,1],[-1,-1,-1,0],[-1,-1,-1,-1],"","2"],["onButtonClick = |[||charisma||, ||+||, 1] call enclave_fnc_character_skill_level|;"]],

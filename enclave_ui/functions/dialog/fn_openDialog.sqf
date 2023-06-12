@@ -28,6 +28,10 @@ switch (_dialog) do
     {
         [_unit] call enclave_fnc_character_creation;
     };
+    case "enclave_character_choose": 
+    {
+        [_unit] call enclave_fnc_character_choose;
+    };
     case "enclave_character_skills": 
     {
         [_unit] call enclave_fnc_character_skills;

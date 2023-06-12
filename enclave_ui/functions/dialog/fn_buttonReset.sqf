@@ -28,7 +28,7 @@ if (_result) exitWith { // if they say yes
 
     {
         localNamespace setVariable [("enclave_sheet_skill_" + _x), SKILL_POINTS_DEFAULT];
-    } forEach ["charisma", "perception", "strength", "intelligence"];
+    } forEach SKILLS;
 
     [_dialog, _unit] call enclave_fnc_openDialog;
 };

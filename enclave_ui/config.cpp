@@ -15,9 +15,11 @@ class cfgPatches
 	};
 };
 
+// #include "commonDefs.hpp"
 #include "dialogs\defines.hpp"
 #include "dialogs\enclave_character_creation.hpp"
 #include "dialogs\enclave_character_skills.hpp"
+#include "dialogs\enclave_character_choose.hpp"
 
 // class CfgFunctions
 // {
@@ -68,9 +70,29 @@ class CfgFunctions
                 file = "\enclave_ui\functions\dialog\fn_buttonReset.sqf";
             };
 
+            class changeDialog
+            {
+                file = "\enclave_ui\functions\dialog\fn_changeDialog.sqf";
+            };
+
+            class character_choose_pipboy
+            {
+                file = "\enclave_ui\functions\dialog\fn_character_choose_pipboy.sqf";
+            };
+
+            class character_choose
+            {
+                file = "\enclave_ui\functions\dialog\fn_character_choose.sqf";
+            };
+
             class character_creation
             {
                 file = "\enclave_ui\functions\dialog\fn_character_creation.sqf";
+            };
+
+            class character_parsePreview
+            {
+                file = "\enclave_ui\functions\dialog\fn_character_parsePreview.sqf";
             };
 
             class character_skill_level

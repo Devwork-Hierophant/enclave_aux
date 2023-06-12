@@ -14,6 +14,14 @@
 
 params ["_unit"];
 
+// private _test = (_ctrls select 9);
+
+// private _eh = [] spawn {
+//     waitUntil { !isNull (findDisplay 46) };
+//     findDisplay 46 displayAddEventHandler ["MouseButtonDown", "playSoundUI [""enclave_ui\sounds\ui_menu_focus.ogg""];"];
+//     findDisplay 46 displayAddEventHandler ["KeyUp", "playSoundUI [""enclave_ui\sounds\ui_menu_ok.ogg""];"];
+// };
+
 #include "..\..\commonDefs.hpp"
 
 // private _skillPoints = localNamespace getVariable ["enclave_sheet_skillPoints", SKILL_POINTS];

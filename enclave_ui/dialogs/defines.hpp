@@ -164,6 +164,7 @@ class RscTextEnclave
 		0.65
 	};
 };
+// class RscTextEnclave : RscText {};
 class RscStructuredTextEnclave
 {
 	deletable = 0;
@@ -195,6 +196,7 @@ class RscStructuredTextEnclave
 	size = "(((((safezoneW / safezoneH) min 1.2) / 1.2) / 25) * 1)";
 	shadow = 1;
 };
+// class RscStructuredTextEnclave : RscStructuredText {};
 class RscPictureEnclave
 {
 	deletable = 0;
@@ -249,6 +251,7 @@ class RscPictureEnclave
 		0.65
 	};
 };
+// class RscPictureEnclave : RscPicture {};
 class RscEditEnclave
 {
 	deletable = 0;
@@ -318,11 +321,13 @@ class RscEditEnclave
 	};
 	maxChars = 25;
 };
+// class RscEditEnclave : RscEdit {};
 class RscEditMultiEnclave: RscEditEnclave
 {
 	style = ST_MULTI;
 	maxChars = 90;
 };
+// class RscEditMultiEnclave : RscEditMulti {};
 class RscFrameEnclave
 {
     type = CT_STATIC;
@@ -335,6 +340,7 @@ class RscFrameEnclave
     sizeEx = 0.03;
     text = "";
 };
+// class RscFrameEnclave : RscFrame {};
 class RscButtonEnclave
 {
 	deletable = 0;
@@ -439,3 +445,48 @@ class RscButtonEnclave
 	offsetPressedY = 0;
 	borderSize = 0;
 };
+class RscButtonInvisEnclave : RscButtonEnclave
+{
+	colorDisabled[] = 
+	{
+		1,
+		1,
+		1,
+		0
+	};
+	colorBackgroundActive[] = 
+	{
+		0,
+		0,
+		0,
+		0.1
+	};
+	soundEnter[] = 
+	{
+		SOUND_ENTER,
+		10,
+		1
+	};
+	soundPush[] = 
+	{
+		// "enclave_ui\sounds\ui_menu_focus.ogg",
+		"",
+		10,
+		1
+	};
+	soundClick[] = 
+	{
+		SOUND_CLICK,
+		10,
+		1
+	};
+	soundEscape[] = 
+	{
+		SOUND_ESCAPE,
+		10,
+		1
+	};
+	shadow = 0;
+};
+// class RscButtonInvisEnclave : RscButtonInvis {};
+// class RscButtonEnclave : RscButton {};
