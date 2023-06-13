@@ -7,6 +7,7 @@
 	0: mode [INT] 0 = Send SQL Command, 1 = Recieve SQL Data 
 	1: 1 = Recieve SQL Data callType [INT] 0 = Async, 2 = Sync + Save
 	2: SQL Query [STRING] SQL Query... Fairly Simple
+	3: client machine [INT] Client machine ID. Used to send data back to the caller
 
 	Example
 	[0,0,"INSERT INTO <ENTER TABLE NAME> VALUES (value1, value2, value3)"] call enclave_db_fnc_extDB3Handler;
@@ -16,7 +17,7 @@
 	If anyone has enough courage to touch this steaming pile of dogshit to make it work for them. I salute you. Only god knows what plans I had for this code
 */
 
-params ["_mode","_callType",["_sql",""],["_clientMachineID",""]];
+params ["_mode","_callType",["_sql",""],["_clientMachineID",-1]];
 
 private _result = "";
 
@@ -83,7 +84,7 @@ if(_mode isEqualTo 0) exitWith {
 	};
 
 	diag_log _result;
-	missionNamespace setVariable["extDB3_return",_result,_clientMachineID];
+	missionNamespace setVariable["enclave_db_return",_result,_clientMachineID];
 };
 
 
@@ -108,5 +109,5 @@ if(_mode isEqualTo 1) exitWith {
 	//WHY WONT YOU WORK YOU DUMB FUCKING CUNT
 	//EDIT: My dumb arse forgot to declare _result as a priv var at the start.... Goodbye 30 mins of my life :)
 	//hint str _result;
-	missionNamespace setVariable["extDB3_return",_result,_clientMachineID];
+	missionNamespace setVariable["enclave_db_return",_result,_clientMachineID];
 };
