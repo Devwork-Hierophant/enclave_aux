@@ -1,3 +1,4 @@
+//Giggidy
 class CfgPatches
 {
 	class enclave_common
@@ -14,7 +15,7 @@ class CfgPatches
 		requiredVersion = 0.1;
 		requiredAddons[] = {"A3_Data_F_AoW_Loadorder"};
 		name = "Enclave - Common";
-		author = "Silence, Zelo, Hierophant";
+		author = "Silence, Zelo, Stevio, Hierophant";
 	};
 };
 
