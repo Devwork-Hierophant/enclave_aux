@@ -42,6 +42,11 @@ class CfgFunctions
             {
                 file = "\enclave_common\functions\fn_playSound.sqf";
             };
+			class savePlayerData 
+			{
+				file = "\enclave_common\functions\fn_savePlayerData.sqf";
+				postInit = 1;
+			}
 			
         };
 		
