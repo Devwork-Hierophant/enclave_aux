@@ -18,7 +18,7 @@ params ["_unit", "_dialog"];
 // save data here, then move onto skills
 
 private _name = ctrlText 1400;
-private _age = ctrlText 1401;
+private _age = (round (parseNumber ctrlText 1401));
 private _faction = ctrlText 1402;
 private _background = ctrlText 1403;
 
