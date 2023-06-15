@@ -18,6 +18,8 @@
 
 private _character = localNamespace getVariable ["enclave_sheet_character", 0];
 
+private _skillPoints = localNamespace getVariable ["enclave_sheet_skillPoints", SKILL_POINTS];
+
 private _skills = [];
 
 {
@@ -26,5 +28,7 @@ private _skills = [];
 } forEach SKILLS;
 
 hint str _skills;
+
+if (_skillPoints isNotEqualTo 0) exitWith {hint "You need to spend all your skill points!"};
 
 closeDialog 2;
