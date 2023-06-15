@@ -1,6 +1,6 @@
 class cfgPatches
 {
-	class enclave_extDB
+	class enclave_extDB_server
 	{
 		units[] =
 		{
@@ -24,12 +24,8 @@ class CfgFunctions
 
 			class extDB3Handler
 			{
-				file = "\enclave_extDB\functions\db\fn_extDB3Handler.sqf";
+				file = "\enclave_extDB_server\functions\db\fn_extDB3Handler.sqf";
 				postInit = 1;
-			};
-			class callExtDB3
-			{
-				file = "\enclave_extDB\functions\db\fn_callExtDB3.sqf";
 			};
 
 		};
