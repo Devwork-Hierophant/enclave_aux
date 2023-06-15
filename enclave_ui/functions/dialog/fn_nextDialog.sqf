@@ -15,12 +15,14 @@
 
 params ["_unit", "_dialog"];
 
-// save data here, then move onto skills
-
 private _name = ctrlText 1400;
-private _age = ctrlText 1401;
+private _age = round (parseNumber (ctrlText 1401)); // no sneaky floats
 private _faction = ctrlText 1402;
 private _background = ctrlText 1403;
+
+if (_age isEqualTo 0) exitWith {hint "Age is 0 or contains non-numbers."; diag_log "Age is 0 or contains non-numbers."};
+
+// save data here, then move onto skills
 
 hint str [_name, _age, _faction, _background];
 

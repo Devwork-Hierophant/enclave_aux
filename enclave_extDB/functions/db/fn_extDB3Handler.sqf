@@ -10,6 +10,8 @@
 	3: client machine [INT] Client machine ID. Used to send data back to the caller
 
 	Example
+	use callExtDB3
+	If that doesn't work for god knows why use this monstrosity.
 	[0,0,"INSERT INTO <ENTER TABLE NAME> VALUES (value1, value2, value3)"] call enclave_db_fnc_extDB3Handler;
 	[1,0,"SELECT * FROM playerinfo"] call enclave_db_fnc_extDB3Handler;
 
