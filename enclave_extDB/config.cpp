@@ -25,11 +25,11 @@ class CfgFunctions
 			class extDB3Handler
 			{
 				file = "\enclave_extDB\functions\db\fn_extDB3Handler.sqf";
+				postInit = 1;
 			};
 			class callExtDB3
 			{
 				file = "\enclave_extDB\functions\db\fn_callExtDB3.sqf";
-				postInit = 1;
 			};
 
 		};
