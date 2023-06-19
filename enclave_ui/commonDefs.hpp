@@ -23,3 +23,4 @@
 #define SKILLS ["charisma", "perception", "strength", "intelligence"]
 
 // these technically need updating if they ever change, bare that in mind
+// EDIT: They will probably change. I feel a warhammer mod incoming....
