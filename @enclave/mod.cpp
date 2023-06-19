@@ -1,9 +1,9 @@
  name 			= "Enclave"; // Name of your mod
- author 		= "Silence, Zelo, Hierophant"; // Affects Arma 3 Launcher, when the mod are loaded as local
+ author 		= "Silence, Stevio, Zelo, Hierophant"; // Affects Arma 3 Launcher, when the mod are loaded as local
  logo 			= "\enclave_common\logo_ca.paa"; // Logo displayed in the main menu
  logoOver 	    = "\enclave_common\logo_ca.paa"; // When the mouse is over, in the main menu
- tooltip 		= "Delta Green";
- tooltipOwned   = "Silence, Zelo, Hierophant"; // Tool tip displayed when the mouse is left over, in the main menu
+ tooltip 		= "Enclave";
+ tooltipOwned   = "Silence, Stevio, Zelo, Hierophant"; // Tool tip displayed when the mouse is left over, in the main menu
  picture 		= "\enclave_common\logo_ca.paa"; // Picture displayed from the expansions menu. Optimal size is 2048x1024
  actionName     = "Discord Link";
  action 		= ""; // Website URL, that can be accessed from the expansions menu

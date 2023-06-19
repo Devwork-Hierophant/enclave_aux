@@ -19,3 +19,11 @@ private _oldData = WBK_AdvancedArmor;
 private _newData = _oldData pushBack _classname;
 
 diag_log format ["Added %1 to WBK_AdvancedArmor. New Array: %2", _classname, _newData];
+
+if ("jetpack" in _classname) then {
+    private _oldData = WBK_JumpPackArray;
+
+    private _newData = _oldData pushBack _classname;
+
+    diag_log format ["Added %1 to WBK_JumpPackArray. New Array: %2", _classname, _newData];
+};

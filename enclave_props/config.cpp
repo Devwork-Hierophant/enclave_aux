@@ -14,7 +14,6 @@ class CfgPatches
 		requiredVersion = 0.1;
 		requiredAddons[] = {"enclave_common"};
 		name = "Enclave - Props";
-		author = "Silence, Zelo";
 	};
 };
 

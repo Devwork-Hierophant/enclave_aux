@@ -13,3 +13,4 @@
 */
 
 ["enclave_epsm_assault"] call enclave_fnc_addExosuit;
+["enclave_epsm_assault_jetpack"] call enclave_fnc_addExosuit;
