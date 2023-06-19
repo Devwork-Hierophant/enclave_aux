@@ -17,19 +17,23 @@ _unit addEventHandler ["Killed", {
     {
         case (_sideUnit isEqualTo civilian):
         {
-            _instigator setVariable ["enclave_karma", KILL_CIV, true];
+            [_instigator, KILL_CIV, "-"] call enclave_fnc_handleKarma;
+            // _instigator setVariable ["enclave_karma", KILL_CIV, true];
         };
         case (_isFriendly isEqualTo true):
         {
-            _instigator setVariable ["enclave_karma", KILL_FRIENDLY, true];
+            [_instigator, KILL_FRIENDLY, "-"] call enclave_fnc_handleKarma;
+            // _instigator setVariable ["enclave_karma", KILL_FRIENDLY, true];
         };
         case (_isFriendly isEqualTo false):
         {
-            _instigator setVariable ["enclave_karma", KILL_ENEMY, true];
+            [_instigator, KILL_ENEMY, "+"] call enclave_fnc_handleKarma;
+            // _instigator setVariable ["enclave_karma", KILL_ENEMY, true];
         };
         case (typeOf _unit in _evilUnits):
         {
-            _instigator setVariable ["enclave_karma", KILL_EVIL, true];
+            [_instigator, KILL_EVIL, "+"] call enclave_fnc_handleKarma;
+            // _instigator setVariable ["enclave_karma", KILL_EVIL, true];
         };
     };
 }];

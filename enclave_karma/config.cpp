@@ -39,6 +39,11 @@ class CfgFunctions
         class functions 
         {
 			
+            class handleKarma
+            {
+                file = "\enclave_karma\functions\fn_handleKarma.sqf";
+            };
+
             class handleKill
             {
                 file = "\enclave_karma\functions\fn_handleKill.sqf";
