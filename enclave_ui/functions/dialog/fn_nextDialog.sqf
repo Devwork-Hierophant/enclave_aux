@@ -27,23 +27,25 @@ private _cid = [1,0, (format["SELECT cid FROM playerinfo WHERE sid=%1",getPlayer
 //Im gonna hate myself for this. God forgive me
 private _v1 = [1,0, (format["SELECT charNum FROM characterinfo WHERE cid=%1 ORDER BY charNum DESC;",_cid]) ] call enclave_db_fnc_callExtDB3;
 
+_v1 = _v1 select 0;
+
 switch (_v1) do 
 {
     case 1: 
     {
-        
+        [0,0, (format["INSERT INTO table_name VALUES (%1, %2, %3, %4, %5, %6);",_cid,"2",_name,_background,_age,_faction]) ] call enclave_db_fnc_callExtDB3;
     };
     case 2: 
     {
-        
+        [0,0, (format["INSERT INTO table_name VALUES (%1, %2, %3, %4, %5, %6);",_cid,"3",_name,_background,_age,_faction]) ] call enclave_db_fnc_callExtDB3;
     };
     case 3: 
     {
-        
+        hint "naughty naughty"; //You should not have more than 3 characters
     };
     default:
     {
-        
+        [0,0, (format["INSERT INTO table_name VALUES (%1, %2, %3, %4, %5, %6);",_cid,"1",_name,_background,_age,_faction]) ] call enclave_db_fnc_callExtDB3;
     };
 };
 
