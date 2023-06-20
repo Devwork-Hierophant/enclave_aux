@@ -216,7 +216,7 @@ class cfgVehicles
 	};
 	class enclave_turret_base: StaticMGWeapon
 	{
-		author="Silence/Zelo";
+		author="";
 		_generalMacro="enclave_turret_base";
 		scope=0;
 		displayName="Automated Turret";
@@ -346,7 +346,7 @@ class cfgVehicles
 	};
 	class enclave_turret: enclave_turret_base
 	{
-		author="Silence/Zelo";
+		author="Project Liberty Mod Team";
 		editorPreview="";
 		_generalMacro="enclave_turret";
 		scope=2;

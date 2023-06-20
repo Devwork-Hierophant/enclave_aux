@@ -1,3 +1,4 @@
+/*
 #define SOUND_ENTER 	  "enclave_ui\sounds\ui_menu_focus.ogg"
 #define SOUND_PUSH 		  "enclave_ui\sounds\ui_menu_focus.ogg"
 #define SOUND_CLICK 	  "enclave_ui\sounds\ui_menu_ok.ogg"
@@ -21,10 +22,4 @@
 #define PIPBOYS [PIPBOY_GOD, PIPBOY_ANGEL, PIPBOY_NEUTRAL, PIPBOY_DEMON, PIPBOY_DEVIL]
 
 #define SKILLS ["charisma", "perception", "strength", "intelligence"]
-
-#define STEAMID getPlayerUID player
-#define CID [1, 0, "SELECT cid FROM playerinfo WHERE sid=STEAMID"] call enclave_db_fnc_callExtDB3
-#define CHARNUM ["enclave_character", 0]
-
-// these technically need updating if they ever change, bare that in mind
-// EDIT: They will probably change. I feel a warhammer mod incoming....
+*/

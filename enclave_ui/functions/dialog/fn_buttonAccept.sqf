@@ -19,6 +19,7 @@ params [["_unit", player]];
 #include "..\..\commonDefs.hpp"
 
 private _character = localNamespace getVariable ["enclave_sheet_character", 0];
+private _cid = [1,0, (format["SELECT cid FROM playerinfo WHERE sid=%1",getPlayerUID player]) ] call enclave_db_fnc_callExtDB3;
 
 private _skillPoints = localNamespace getVariable ["enclave_sheet_skillPoints", SKILL_POINTS];
 
@@ -31,6 +32,8 @@ private _skills = [];
     _unit setVariable [("enclave_sheet_skill_" + _x), _data];
     _skills pushBack _data;
 } forEach SKILLS;
+
+[0,0, (format["INSERT INTO skillstable VALUES (%1,%2,%3,%4,%5)",_cid, _skills select 1, _skills select 2, _skills select 3, _skills select 4]) ] call enclave_db_fnc_callExtDB3;
 
 // this array is inverted ^ because of pushback, so charisma is the last object and intelligence is the first
 
