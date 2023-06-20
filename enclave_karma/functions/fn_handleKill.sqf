@@ -5,7 +5,7 @@ params ["_unit"];
 _unit addEventHandler ["Killed", {
 	params ["_unit", "_killer", "_instigator", "_useEffects"];
 
-    private _karma = _instigator getVariable ["enclave_karma", KARMA_DEFAULT];
+    private _karma = [_instigator] call enclave_fnc_karma;
 
     private _sideUnit = side group _unit;
     private _sideInstigator = side group _instigator;

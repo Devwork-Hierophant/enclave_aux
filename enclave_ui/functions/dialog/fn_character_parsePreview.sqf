@@ -1,4 +1,4 @@
-params ["_name", "_age", "_faction"];
+params ["_name", "_karma", "_faction"];
 
 private _textCharacter = format
 [
@@ -10,7 +10,7 @@ private _textCharacter = format
 <br />
 <br />
 <br />
-<t font='PuristaSemibold' size='1.5'>Age: </t>
+<t font='PuristaSemibold' size='1.5'>Karma: </t>
 <t font='PuristaSemibold' size='1.5'>%2</t>
 <br />
 <br />
@@ -22,7 +22,7 @@ private _textCharacter = format
 <br />
 ",
 _name,
-_age,
+_karma,
 _faction
 ];
 

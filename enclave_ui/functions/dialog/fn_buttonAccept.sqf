@@ -37,3 +37,5 @@ private _skills = [];
 hint str _skills;
 
 closeDialog 2;
+
+_unit setVariable ["enclave_character", _character, true];

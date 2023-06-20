@@ -15,20 +15,31 @@ class cfgPatches
 	};
 };
 
-// class cfgSounds
-// {
-// 	class enclave_sound
-// 	{
-// 		name="enclave_sound";
-// 		sound[]=
-// 		{
-// 			"\enclave.ogg",
-// 			10,
-// 			1
-// 		};
-// 		titles[]={};
-// 	};
-// };
+class cfgSounds
+{
+	class enclave_karma_bad
+	{
+		name="enclave_karma_bad";
+		sound[]=
+		{
+			"enclave_karma\sounds\enclave_karma_bad.ogg",
+			1,
+			1
+		};
+		titles[]={};
+	};
+	class enclave_karma_good
+	{
+		name="enclave_karma_good";
+		sound[]=
+		{
+			"enclave_karma\sounds\enclave_karma_good.ogg",
+			2,
+			1
+		};
+		titles[]={};
+	};
+};
 
 class CfgFunctions 
 {
@@ -44,9 +55,29 @@ class CfgFunctions
                 file = "\enclave_karma\functions\fn_handleKarma.sqf";
             };
 
+            class handleKarmaIcon
+            {
+                file = "\enclave_karma\functions\fn_handleKarmaIcon.sqf";
+            };
+
             class handleKill
             {
                 file = "\enclave_karma\functions\fn_handleKill.sqf";
+            };
+			
+            class karma
+            {
+                file = "\enclave_karma\functions\fn_karma.sqf";
+            };
+
+            class karmaDown
+            {
+                file = "\enclave_karma\functions\fn_karmaDown.sqf";
+            };
+			
+            class karmaUp
+            {
+                file = "\enclave_karma\functions\fn_karmaUp.sqf";
             };
 			
         };
