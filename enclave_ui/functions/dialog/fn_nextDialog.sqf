@@ -33,11 +33,11 @@ switch (_v1) do
 {
     case 1: 
     {
-        [0,0, (format["INSERT INTO table_name VALUES (%1, %2, %3, %4, %5, %6);",_cid,"2",_name,_background,_age,_faction]) ] call enclave_db_fnc_callExtDB3;
+        [0,0, (format["INSERT INTO characterinfo VALUES (%1, %2, %3, %4, %5, %6);",_cid,"2",_name,_background,_age,_faction]) ] call enclave_db_fnc_callExtDB3;
     };
     case 2: 
     {
-        [0,0, (format["INSERT INTO table_name VALUES (%1, %2, %3, %4, %5, %6);",_cid,"3",_name,_background,_age,_faction]) ] call enclave_db_fnc_callExtDB3;
+        [0,0, (format["INSERT INTO characterinfo VALUES (%1, %2, %3, %4, %5, %6);",_cid,"3",_name,_background,_age,_faction]) ] call enclave_db_fnc_callExtDB3;
     };
     case 3: 
     {
@@ -45,7 +45,7 @@ switch (_v1) do
     };
     default:
     {
-        [0,0, (format["INSERT INTO table_name VALUES (%1, %2, %3, %4, %5, %6);",_cid,"1",_name,_background,_age,_faction]) ] call enclave_db_fnc_callExtDB3;
+        [0,0, (format["INSERT INTO characterinfo VALUES (%1, %2, %3, %4, %5, %6);",_cid,"1",_name,_background,_age,_faction]) ] call enclave_db_fnc_callExtDB3;
     };
 };
 
