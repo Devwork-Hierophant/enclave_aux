@@ -22,5 +22,9 @@
 
 #define SKILLS ["charisma", "perception", "strength", "intelligence"]
 
+#define STEAMID getPlayerUID player
+#define CID [1, 0, (format["SELECT cid FROM playerinfo WHERE sid=%1", getPlayerUID player])] call enclave_db_fnc_callExtDB3
+#define CHARNUM ["enclave_character", 0]
+
 // these technically need updating if they ever change, bare that in mind
 // EDIT: They will probably change. I feel a warhammer mod incoming....

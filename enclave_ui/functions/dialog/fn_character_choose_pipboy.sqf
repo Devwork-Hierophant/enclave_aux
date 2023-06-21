@@ -1,6 +1,6 @@
 params ["_idc"];
 
-hint str _idc;
+// hint str _idc;
 
 #include "..\..\commonDefs.hpp"
 

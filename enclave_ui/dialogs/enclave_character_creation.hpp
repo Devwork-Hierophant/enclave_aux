@@ -138,6 +138,7 @@ class enclave_ui_character_creation_age_edit: RscEditEnclave
 	colorBackground[] = {0,1,0,1};
 	colorActive[] = {0,1,0,1};
 	sizeEx = 1.5 * GUI_GRID_H;
+	maxChars = 2;
 };
 class enclave_ui_character_creation_faction_edit: RscEditEnclave
 {
