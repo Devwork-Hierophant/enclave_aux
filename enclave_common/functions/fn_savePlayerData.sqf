@@ -15,6 +15,6 @@ if(hasInterface && isServer) exitWith {
 private _extDB3Return = [1,0,format ["SELECT sid FROM playerinfo WHERE sid=%1",getPlayerUID player]] call enclave_db_fnc_callExtDB3;
 
 if(_extDB3Return == "") exitWith {
-	[0,0,format ["INSERT INTO playerinfo VALUES (%1, %2, %3)",getPlayerUID player,random 99999999999,name player]] call enclave_db_fnc_callExtDB3;
+	[0,0,format ["INSERT INTO playerinfo (sid,cid,name) VALUES (%1, %2, %3)",getPlayerUID player,random 99999999999,name player]] call enclave_db_fnc_callExtDB3;
 	player setVariable["_characterID",[1,0,format ["SELECT cid FROM playerinfo WHERE sid=%1",getPlayerUID player]] call enclave_db_fnc_callExtDB3,false]; //God hates me cause of this
 };

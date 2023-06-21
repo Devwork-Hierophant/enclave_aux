@@ -17,6 +17,11 @@ params ["_unit"];
 
     private _data = [1, 0, (format["SELECT name, description, karma FROM characterinfo WHERE cid=%1 AND charNum=%2", CID, (_forEachIndex+1)]) ] call enclave_db_fnc_callExtDB3; // our index starts at 1, forEach starts at 0
 
+    diag_log _data;
+    diag_log ((_data select 1) select 0) select 0;
+    diag_log ((_data select 1) select 0) select 1;
+    diag_log ((_data select 1) select 0) select 2;
+
     private _name = ((_data select 1) select 0) select 0;
     private _description = ((_data select 1) select 0) select 1;
     private _karma = ((_data select 1) select 0) select 2;

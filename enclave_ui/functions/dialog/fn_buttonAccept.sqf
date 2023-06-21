@@ -33,7 +33,7 @@ private _skills = [];
     _skills pushBack _data;
 } forEach SKILLS;
 
-[0,0, (format["INSERT INTO skillstable VALUES (%1,%2,%3,%4,%5)",_cid, _skills select 1, _skills select 2, _skills select 3, _skills select 4]) ] call enclave_db_fnc_callExtDB3;
+[0,0, (format["INSERT INTO skillstable (cid, charismaSkill, perceptionSkill, strengthSkill, intelligenceSkill) VALUES (%1,%2,%3,%4,%5)",_cid, _skills select 1, _skills select 2, _skills select 3, _skills select 4]) ] call enclave_db_fnc_callExtDB3;
 
 // this array is inverted ^ because of pushback, so charisma is the last object and intelligence is the first
 
