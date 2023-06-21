@@ -11,6 +11,8 @@ if (_karma <= -1000) exitWith {};
 if (_operator isEqualTo "-") exitWith {
     private _updatedKarma = (_karma - _newKarma);
 
+    // _unit setVariable ["enclave_karma", _updatedKarma, _global];
+
     [0, 0, (format ['INSERT INTO characterinfo (karma) VALUES ("%1");',_updatedKarma]) ] call enclave_db_fnc_callExtDB3;
 
     [_unit, _updatedKarma, 0] call enclave_fnc_handleKarmaIcon;
@@ -18,7 +20,7 @@ if (_operator isEqualTo "-") exitWith {
 
 private _updatedKarma = (_karma + _newKarma);
 
-_unit setVariable ["enclave_karma", _updatedKarma, _global];
+// _unit setVariable ["enclave_karma", _updatedKarma, _global];
 
 [0, 0, (format ['INSERT INTO characterinfo (karma) VALUES ("%1");',_updatedKarma]) ] call enclave_db_fnc_callExtDB3;
 

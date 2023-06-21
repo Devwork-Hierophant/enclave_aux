@@ -15,6 +15,11 @@ class cfgPatches
 	};
 };
 
+class zen_context_menu_actions
+{
+	#include "cfgZEN.hpp"
+};
+
 class cfgSounds
 {
 	class enclave_karma_bad

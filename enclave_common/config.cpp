@@ -19,11 +19,6 @@ class CfgPatches
 	};
 };
 
-class zen_context_menu_actions
-{
-	#include "cfgZEN.hpp"
-};
-
 class CfgFunctions 
 {
 	
