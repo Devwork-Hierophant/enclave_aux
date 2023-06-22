@@ -25,6 +25,13 @@ if (_result) exitWith { // if they say yes
     closeDialog 2;
 
     localNamespace setVariable ["enclave_sheet_skillPoints", SKILL_POINTS];
+    localNamespace setVariable ["enclave_character_stats_temp", ["", "", "", ""]];
+    localNamespace setVariable ["enclave_sheet_character", 0];
+
+    localNamespace setVariable ["enclave_sheet_skill_intelligence", SKILL_POINTS_DEFAULT];
+    localNamespace setVariable ["enclave_sheet_skill_strength", SKILL_POINTS_DEFAULT];
+    localNamespace setVariable ["enclave_sheet_skill_perception", SKILL_POINTS_DEFAULT];
+    localNamespace setVariable ["enclave_sheet_skill_charisma", SKILL_POINTS_DEFAULT];
 
     {
         localNamespace setVariable [("enclave_sheet_skill_" + _x), SKILL_POINTS_DEFAULT];

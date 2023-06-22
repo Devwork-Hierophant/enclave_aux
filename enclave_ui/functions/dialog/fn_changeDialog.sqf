@@ -11,15 +11,17 @@ if (_character isNotEqualTo 0) then {
 
 private _result = ["Are you sure?", "Confirm", true, true] call BIS_fnc_guiMessage;
 
-private _tof = [1, 0, (format["SELECT charNum FROM characterinfo WHERE EXISTS (SELECT charNum FROM characterinfo WHERE charnum=%1 AND cid=%2);", _character, CID]) ] call enclave_db_fnc_callExtDB3;
+private _characterExists = profileNamespace getVariable [("enclave_character_info_" + str _character), ["", "", "", ""]];
 
-diag_log _tof;
+// private _tof = [1, 0, (format["SELECT charNum FROM characterinfo WHERE EXISTS (SELECT charNum FROM characterinfo WHERE charnum=%1 AND cid=%2);", _character, CID]) ] call enclave_db_fnc_callExtDB3;
 
-_tof = ((_tof select 1) select 0) select 0;
+// diag_log _tof;
+
+// _tof = ((_tof select 1) select 0) select 0;
 
 if (_result) exitWith { // if they say yes
     closeDialog 2;
-    if (_tof) exitWith { // if their character already exists
+    if (_characterExists isNotEqualTo ["", "", "", ""]) exitWith { // if their character already exists
         _unit setVariable ["enclave_character", _character, true];
     };
 

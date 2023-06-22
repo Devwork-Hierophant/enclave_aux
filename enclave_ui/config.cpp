@@ -95,6 +95,16 @@ class CfgFunctions
                 file = "\enclave_ui\functions\dialog\fn_character_parsePreview.sqf";
             };
 
+            class character_reset
+            {
+                file = "\enclave_ui\functions\dialog\fn_character_reset.sqf";
+            };
+
+            class character_resetAll
+            {
+                file = "\enclave_ui\functions\dialog\fn_character_resetAll.sqf";
+            };
+
             class character_skill_level
             {
                 file = "\enclave_ui\functions\dialog\fn_character_skill_level.sqf";
