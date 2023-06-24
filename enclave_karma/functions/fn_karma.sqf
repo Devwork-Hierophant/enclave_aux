@@ -1,3 +1,18 @@
+/*
+    Author:
+    Silence
+
+    Description:
+    Gets the current karma value
+
+    Params:
+    _unit       <UNIT>
+    _character  <INT> <DEFAULT: getVariable "enclave_character">
+
+    Usage:
+    [_unit] call enclave_fnc_karma;
+*/
+
 params ["_unit", ["_character", player getVariable ["enclave_character", 0]]];
 
 #include "..\karmaValues.hpp"

@@ -1,3 +1,17 @@
+/*
+    Author:
+    Silence
+
+    Description:
+    Handles each kill. Determines wether or not to do a + or - karma change. If a custom skeleton is in use, you'll have to add this script to the skeleton, like is done via CAManBase
+
+    Params:
+    _unit        <UNIT>
+
+    Usage:
+    [_unit] call enclave_fnc_handleKill;
+*/
+
 params ["_unit"];
 
 #include "..\karmaValues.hpp"

@@ -1,3 +1,18 @@
+/*
+    Author:
+    Silence
+
+    Description:
+    Formats a karma up string, then executes it
+
+    Params:
+    _unit       <UNIT>
+    _icon       <STRING>
+
+    Usage:
+    [_unit] call enclave_fnc_karma;
+*/
+
 params ["_unit", "_icon"];
 
 _unit setVariable ["enclave_karma_updating", true];

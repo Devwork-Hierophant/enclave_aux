@@ -1,3 +1,20 @@
+/*
+    Author:
+    Silence
+
+    Description:
+    Handles karma updating. Can + or - karma, and handles the associated icon that pops up on the screen.
+
+    Params:
+    _unit       <UNIT>
+    _newKarma   <INT>
+    _operator   <STRING> <DEFAULT: "+">
+    _character  <INT> <DEFAULT: getVariable "enclave_character">
+
+    Usage:
+    [_unit, _newKarma, _operator] call enclave_fnc_handleKarma;
+*/
+
 params ["_unit", "_newKarma", ["_operator", "+"], ["_character", player getVariable ["enclave_character", 0]], ["_global", true]];
 
 #include "..\karmaValues.hpp"

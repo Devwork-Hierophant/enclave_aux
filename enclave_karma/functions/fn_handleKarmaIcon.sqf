@@ -1,3 +1,19 @@
+/*
+    Author:
+    Silence
+
+    Description:
+    Handles karma icon updating. _karmaChange 1 is a plus, 0 is a minus
+
+    Params:
+    _unit        <UNIT>
+    _karma       <INT>
+    _karmaChange <INT>
+
+    Usage:
+    [_unit, _karma, _karmaChange] call enclave_fnc_handleKarmaIcon;
+*/
+
 params ["_unit", "_karma", "_karmaChange"];
 
 if (_unit getVariable ["enclave_karma_updating", false] isEqualTo true) exitWith {diag_log "Karma UI already updating, skipping"};
