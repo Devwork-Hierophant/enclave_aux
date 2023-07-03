@@ -6,7 +6,7 @@ params ["_unit", "_dialog", ["_character", 0]];
 
 if (_character isNotEqualTo 0) then {
     localNamespace setVariable ["enclave_sheet_character", _character];
-    hint str _character;
+    // hint str _character;
 };
 
 private _result = ["Are you sure?", "Confirm", true, true] call BIS_fnc_guiMessage;

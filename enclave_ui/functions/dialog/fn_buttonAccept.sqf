@@ -40,7 +40,7 @@ saveProfileNamespace;
 
 // this array is inverted ^ because of pushback, so charisma is the last object and intelligence is the first
 
-hint str _skills;
+// hint str _skills;
 
 closeDialog 2;
 
