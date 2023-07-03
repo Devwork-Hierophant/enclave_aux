@@ -14,6 +14,8 @@
 
 params ["_unit"];
 
+if (!isMultiplayer) exitWith {}; // no point running karma stuff in sp, we don't want it to be used in sp anyway
+
 #include "..\karmaValues.hpp"
 
 _unit addEventHandler ["Killed", {

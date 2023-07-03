@@ -19,6 +19,8 @@ class CfgPatches
 	};
 };
 
+#include "cfgUserActions.hpp"
+
 class CfgFunctions 
 {
 	
