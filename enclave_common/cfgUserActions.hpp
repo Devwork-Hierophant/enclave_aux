@@ -3,7 +3,7 @@ class CfgUserActions
 	class enclave_character_selectCharacter
 	{// This class name is used for internal representation and also for the inputAction command.
 		displayName = "Character Menu";
-		tooltip = "";
+		tooltip = "Make this something you won't accidentally press. Once you open it, you have to complete everything to close it!";
 		onActivate = "[""enclave_character_choose"", player] call enclave_fnc_openDialog;";		// _this is always true.
 		onDeactivate = "";		// _this is always false.
 		onAnalog = "";	// _this is the scalar analog value.

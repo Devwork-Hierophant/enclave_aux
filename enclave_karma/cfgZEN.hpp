@@ -11,13 +11,6 @@
             icon = "";
             priority = 18;
         };
-        // class send_to_chamber
-        // {
-        //     displayName = "Send To Gods Chamber";
-        //     statement = "[""Gods Chamber"", [[""EDIT"", ""Time Until Return""], [""EDIT"", ""Sound Classname""]], {[(_this select 1) select 0, (_this select 0) select 0, (_this select 0) select 1] remoteExec [""delta_green_building_fnc_create"", (_this select 1) select 0]}, {}, [_hoveredEntity]] call zen_dialog_fnc_create";
-        //     icon = "\dg_common\ui\spook_ca.paa";
-        //     priority = 18;
-        // };
         class editKarma
         {
             displayName = "Edit Karma";
@@ -26,4 +19,5 @@
             icon = "";
             priority = 19;
         };
+        // bugged, cos remoteExec doesn't have a return value (using this on another player will add karma to you)
     };
